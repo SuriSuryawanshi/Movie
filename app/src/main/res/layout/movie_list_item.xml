@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#222222">
+
+
+    <ImageView
+        android:id="@+id/movieImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/LayoutMovieName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/noimageplaceholder" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/LayoutMovieName"
+        android:background="#CCC23030"
+        android:padding="5sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/MovieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_horizontal"
+            android:textSize="12sp"
+            android:padding="2dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="#cccccc"
+            android:maxLines="2"
+            android:padding="2dp"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+   <!-- <TextView
+        android:id="@+id/MovieName"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#CCA11A1A"
+        android:gravity="center|center_horizontal"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+         />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
